@@ -1,0 +1,31 @@
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+  background: transparent;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background: #170524;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  color: aliceblue;
+}
+/* 
+nav{
+  background-color: #0f172a;
+  color: aliceblue;
+  height: 65px;
+  display: flex;
+  justify-content:space-around;
+} */

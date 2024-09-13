@@ -1,0 +1,127 @@
+#project{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: calc(100vh - 4rem);
+}
+#headlinep{
+    text-align: center;
+    margin-top:4rem;
+    font-size: xx-large;
+    font-weight: 700;
+    letter-spacing: .2rem;
+}
+#project_box1{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+.sizing{
+    border: 4px solid aliceblue ;
+    border-radius: 20px;
+    width: 26rem;
+    height: 14rem;
+}
+.size{
+    width: 25rem;
+}
+#project_box2{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rel{
+    position: relative;
+}
+.rel:hover{
+    filter: drop-shadow(2px 2px 9px #f6aacd);
+
+}
+.abs{
+    padding: 1.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:0;
+    background-color:rgba(0, 0, 0, 0.553) ;
+    opacity: 0;
+    border-radius: 20px;
+    transition: opacity 1s;
+}
+.p_align{
+    margin-top: 0.1rem;
+}
+.abs:hover{
+    opacity: 10;
+}
+.projecName{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.btn a{
+    padding: 4px 16px;
+    background: radial-gradient(#f6aacd,#e82a82,#f32484);
+    display: inline;
+    color: #170524;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-transform:capitalize;
+    border-radius: 5px;
+
+}
+.btn a:hover{
+    color: aliceblue;
+    background: radial-gradient(#e82a82,#f32484,#f6aacd);
+}
+.v_p{
+    outline: 0;
+    border: none;
+}
+@media screen and (max-width:840px) {
+    #project{
+        width: 100%;
+        height: 100%;
+        padding: 1rem 1.5rem;
+    }
+    #headlinep{
+        margin-top: 1rem;
+
+    }
+    #project_box1{
+        width: 100%;
+    }
+    #project_box1>div{
+        width: 100%;
+    }
+    #project_box2>div{
+        width: 100%;
+    }
+    .rel{
+        width: 100%;
+    }
+    .mediaSize{
+        border: 4px solid #f46cab ;
+        border-radius: 20px;
+        width: 22rem;
+        height: 16rem;
+        width: 100%;
+    }
+    #project_box1,#project_box2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}

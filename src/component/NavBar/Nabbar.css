@@ -1,0 +1,136 @@
+#nav{
+    height: 4rem;
+    width: 100vw;
+    background-color: #0e0315;
+    border-bottom: 3px solid #0e03159a;
+    box-shadow: 0px 2px 30px gray;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#nav-left{
+    /* border: 2px solid red; */
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+}
+#dot{
+    position: relative;
+    left:0.2rem;
+    top: 0.1rem;
+    font-size: larger;
+    font-weight: 900;
+}
+#nav-left img{
+    object-fit: cover;
+}
+#nav-right
+{
+    /* border: 2px solid green; */
+    flex-basis: 60%;
+    display: flex;
+    padding-left: 12rem;
+    gap: 4rem;
+}
+.lin{
+    position: relative;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 900;
+    color: #a0a0a0;
+    padding: 0 10px;
+    /* letter-spacing: .1rem; */
+}
+.lin::after{
+    content: "";
+    position: absolute;
+    background:linear-gradient(45deg,#f6aacd 0%,#ec559b 15% ,#e82a82 50%,#bd0058 75%); 
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.lin:hover{
+    color:aliceblue
+}
+.active{
+    color: whitesmoke;
+
+}
+#mobile{
+    display: none;
+}
+.lin:hover::after{
+    width: 100%;
+}
+#thank{
+    display: flex;
+    justify-content: center;
+    color: aqua;
+    transition: all 3s ease-in 0.1s;
+}
+#thank:hover{
+    color: #a0a0a0;
+    transform: translateX(40px)
+}
+@media screen and (max-width:1070px) {
+    #nav-left{
+        flex-basis: 40%;
+        display: flex;
+        justify-content: start;
+    }
+    #nav-right{
+        display:none;
+    }
+    #mobile{
+        display: flex;
+    }
+    #mobile-nav-right{
+       position: absolute;
+       top: 4rem;
+       right: 2rem;
+       z-index: 100;
+       padding: 1rem 1rem;
+       /* border: 2px solid; */
+       height: fit-content;
+       background-color: rgba(50, 50, 50, 0.812);
+       border-radius: 1rem; 
+    }
+    .open{
+       display: flex; 
+       flex-direction: column;
+    }
+    #img-trans{
+        transition:all;
+        cursor: pointer;
+    }
+    #img-trans:hover{
+        transform:scale(1.1)
+    }
+    .close{
+        display: none;
+    }
+    .mob-lin{
+        font-weight: bold;
+        padding: 0.5rem 3rem;
+        /* border: 2px solid red; */
+        border-radius: 4rem;
+        display: flex;
+        justify-content: center;
+        margin: 0.25rem;
+        background-color: rgb(30,30,30);
+        width: 100%;
+        cursor: pointer;
+    }
+    .mob-lin:hover{
+        border-bottom: 2px solid rgb(224, 41, 72) ;
+    }
+    
+}
