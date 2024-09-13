@@ -20,7 +20,7 @@ export default function About(){
       <div id='about_content'>
         <h1 id='abtm'>About <span id="me_color">Me</span></h1>
         <h2 id='webd'>Web Developer</h2>
-        <p id='abtp'>.I'm fresh-faced web developer eager to bring creativity and functionality to the digital world. Proficient in HTML, CSS, and JavaScript. Check out my portfolio to explore projects showcasing my commitment to clean, user-friendly design and efficient coding practices.I don't have any work Experience.I think of Taking efficient effort I shall Learn Everything.I assure to you I asset to this role if I'm choosen to Contribute your team. Let's build the web together!</p>
+        <p id='abtp'>I'm fresh-faced web developer eager to bring creativity and functionality to the digital world. Proficient in HTML, CSS,JavaScript and Reactjs.Check out my portfolio to explore projects showcasing my commitment to clean, user-friendly design and efficient coding practices.I don't have any work Experience.I think of Taking efficient effort I shall Learn Everything.I assure to you I asset to this role if I'm choosen to Contribute your team. Let's build the web together!</p>
         <div id='read_info'>
         <button id='read_me'><a href={moreinfo} target='__blank'>more info</a></button>
         </div>
